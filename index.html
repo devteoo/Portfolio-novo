@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Portfolio | Matheus Teofilo</title>
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <header>
+        <nav class="navegacao">
+            <ul class="menu">
+                <li>
+                    <a href="#cabecalho" class="menu-link">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#sobre" class="menu-link">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#projetos" class="menu-link">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="#contatos" class="menu-link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="cabecalho" class="cabecalho">
+
+        <img src="./assets/img1.jpg" class="foto-perfil">
+        <h1>Matheus Teofilo</h1>
+        <h2 class="cabecalho-sub-titulo">Desenvolvedor Front End</h2>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Olá! Sou um desenvolvedor front-end apaixonado em criar experiências memoráveis,
+                sempre buscando escrever um código limpo e bem organizado, além de responsivo e com boa usabilidade.
+                Tenho experiência com HTML, CSS, JavaScript e sigo praticando frameworks como React. Gosto de
+                transformar ideias em soluções visuais funcionais e intuitivas, sempre buscando aprender novas
+                tecnologias.</p>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+
+        <div class="projetos-caixa">
+            <a href="https://netflix-clone-puce-five-83.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <div class="projetos-card">
+                    <img src="./assets/capa-netflix.jpg" alt="netflix" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="projetos-info">Projeto 1</h3>
+                        <p class="projetos-paragrafo">Clone de uma página inicial similar a Netflix, utilzando HTML,
+                            CSS,
+                            JavaScript e Bootstrap.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://justly-lp.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <div class="projetos-card">
+                    <img src="./assets/capa-justly.png" alt="justly" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="projetos-info">Projeto 2</h3>
+                        <p class="projetos-paragrafo">Landing Page responsiva de um prestigiado escritório
+                            de
+                            advocacia internacional.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://spotify-clone-peach-delta.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <div class="projetos-card">
+                    <img src="./assets/capa-spotify.jpg" alt="spotify" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="projetos-info">Projeto 3</h3>
+                        <p class="projetos-paragrafo">Clonagem da pagina inicial do Spotify Web, utilizando somente HTML
+                            e
+                            CSS.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form class="contatos-formulario" id="formulario" onsubmit="enviarWhatsapp(event)">
+            <div class="grupo-formulario">
+                <input type="text" placeholder="Seu Nome" class="campo-formulario" id="nome">
+            </div>
+
+            <div class="grupo-formulario">
+                <textarea class="campo-formulario" id="mensagem" placeholder="Sua Mensagem" rows="8"></textarea>
+            </div>
+
+            <button type="submit" class="botao-formulario">Enviar WhatsApp</button>
+        </form>
+
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
